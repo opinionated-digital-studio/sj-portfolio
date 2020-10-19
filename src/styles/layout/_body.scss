@@ -1,0 +1,64 @@
+html {
+  @include sgl-html;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $foreground-color;
+  @include sgl-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-family-heading;
+  // transform-origin: left;
+  // transform: scaleX(90%);
+  letter-spacing: -2.5px;
+}
+
+
+h1 {
+  @include sgl-heading(3, 0, 1, 2);
+}
+
+h2 {
+  @include sgl-heading(2, 0, 1, 1);
+}
+
+h3 {
+  @include sgl-heading(1, 0, 1, 0);
+}
+
+h4 {
+  @include sgl-heading(0, 0, 1, 0);
+}
+
+h5 {
+  @include sgl-heading(0, 0, 1, 0);
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  @include sgl-margins(0, 1);
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  @include sgl-margins(0, 0);
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

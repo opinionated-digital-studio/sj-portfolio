@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'NFCarta-Thin';
+  src: local('NFCarta-Thin'), url(../fonts/NFCarta-Thin.eot) format('eot');
+  src: local('NFCarta-Thin'), url(../fonts/NFCarta-Thin.otf) format('otf');
+  src: local('NFCarta-Thin'), url(../fonts/NFCarta-Thin.ttf) format('ttf');
+  src: local('NFCarta-Thin'), url(../fonts/NFCarta-Thin.woff) format('woff');
+  src: local('NFCarta-Thin'), url(../fonts/NFCarta-Thin.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'NFChimaeraSans-Regular';
+  src: local('../fonts/NFChimaeraSans-Regular.eot'), url(../fonts/NFChimaeraSans-Regular.eot) format('eot');
+  src: local('../fonts/NFChimaeraSans-Regular.otf'), url(../fonts/NFChimaeraSans-Regular.otf) format('otf');
+  src: local('../fonts/NFChimaeraSans-Regular.ttf'), url(../fonts/NFChimaeraSans-Regular.ttf) format('ttf');
+  src: local('../fonts/NFChimaeraSans-Regular.woff'), url(../fonts/NFChimaeraSans-Regular.woff) format('woff');
+  src: local('../fonts/NFChimaeraSans-Regular.woff2'), url(../fonts/NFChimaeraSans-Regular.woff2) format('woff2');
+}
+
+@import "./base/reset";
+@import "./base/colors";
+@import "./base/mixins";
+@import "./base/type";
+@import "./base/utils";
+
+@import "./layout/header";
+@import "./layout/body";
+
+@import "./modules/links";
+@import "./modules/cursor";
+
+@import "./overrides/splash";
+
+:export {
+  foreground: toRGB($foreground-color);
+  background: toRGB($background-color);
+  accent: toRGB($accent-color);
+}
+

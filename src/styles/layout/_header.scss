@@ -1,0 +1,13 @@
+header {
+  @include sgl-margins(1, 1, $unit: $sgl-base-unit, $base-value: $sgl-base-font-size)
+}
+
+.nav--main {
+  margin: 0;
+}
+
+.nav__item a {
+  color: $foreground-color;
+  text-decoration: none;
+}
+
